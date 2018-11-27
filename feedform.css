@@ -1,0 +1,155 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1541450805268-4822a3a774ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f0be4a29fb65cc6079ab6cf439d64fd&auto=format&fit=crop&w=1500&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#form{
+    margin: 90px;
+    color:white;
+    padding-left: 70px;
+    border-right: 1px solid lightgray; 
+    padding-right: 10px;
+}
+h3{
+  
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+#s{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.form-control{
+    background: rgba(255, 255, 255);
+    margin-top: 12px;
+    border: 0px solid gray;
+    border-radius: 100px;
+    color:  black;
+}
+#Message{
+    border-radius: 10px;
+}
+hr{
+border-color: white;
+}
+.col-md-5{
+     /*background:rgba(0,0,0,0.9);
+   background-image: linear-gradient(65deg, #29089d, #4358ba, #449bd6, #09e0f1);
+   */background-color: transparent;
+   margin-top: 60px;
+    height:450px;
+    border-radius: 5px;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border: 1px solid transparent;
+  }
+  
+  .form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+    color: black;
+  }
+  .form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+#Button{ 
+    /*background-image: linear-gradient(65deg, #29089d, #4358ba, #449bd6, #09e0f1);
+    */   
+     border-radius: 100px;
+    /* background-image: linear-gradient(349deg, #d2314b, #e3777f, #ebb1b7, #e9e9f2);
+    */
+    background-image: linear-gradient(107deg, #c82868, #d45670, #df7a78, #e89b7f);
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+}
+h2{
+    margin-top: 120px; 
+    margin-left: 40px;
+    font-size:  30px;
+    color: white;
+}h2 p{
+    margin-left: 60px;
+    font-size:  17px;
+    color: white;
+    text-align: center;
+}
+    
+#btn{
+    width: 30%;
+    border: 0px;
+    /*background-image: linear-gradient(349deg, #d2314b, #e3777f, #ebb1b7, #e9e9f2);
+    
+    */background-image: linear-gradient(107deg, #c82868, #d45670, #df7a78, #e89b7f);
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: #f1c0bf;
+    color: white;
+    border-radius: 100px;
+    margin-left: 160px;
+}
+.navbar{ 
+    background: transparent;
+    padding-left: 30px;
+}
+.nav-link , .navbar-brand{ 
+	color: #f4f4f4; 
+    cursor: pointer;
+    
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+}
+.nav-link{ 
+    margin-right: 1em !important;
+    font-family: 'Courgette', cursive;
+}
+.navbar-brand:hover{ 
+	background:transparent; 
+	color:#C33F6E; 
+}
+.nav-link:hover{ 
+	background:white;; 
+	color:#C33F6E; 
+}
+.navbar-collapse{ 
+	justify-content: flex-end;  /*because bootstrap grid is built with flexbox system so for alignment you have to use a Flexbox property. */
+}
+.navbar-toggler{  
+	background:#fff !important;
+	
+}
+
+.col-lg-5{
+    margin-left: 0px;
+    padding: 0px;
+}
+
+
+

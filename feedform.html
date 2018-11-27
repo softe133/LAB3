@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback form 2</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/feedform.css">
+    <!--adding internal javascript through script tag-->
+    <script>
+         type="text/JavaScript"
+         type="text/javascript"
+ 
+        function validate()
+        {
+            if(document.getElementById('Username').value = ""){
+                 alert("Plz fill the required field");
+                 return false;
+             } 
+        }
+         function showResult(){
+             var a= document.getElementById("Username").value;
+             if(document.getElementById("Username").value=="" || document.getElementById("Email").value=="" || document.getElementById("Message").value==""){
+                document.getElementById('Username').style.borderWidth= "2px";
+                document.getElementById('Username').style.borderStyle= "solid";
+                document.getElementById('Username').style.borderColor= "red";
+
+                document.getElementById('Email').style.borderWidth= "2px";
+                document.getElementById('Email').style.borderStyle= "solid";
+                document.getElementById('Email').style.borderColor= "red";
+
+                document.getElementById('Message').style.borderWidth= "2px";
+                document.getElementById('Message').style.borderStyle= "solid";
+                document.getElementById('Message').style.borderColor= "red";
+                 alert("Plz fill the required field");
+                 document.getElementById('Username').style.borderColor= "red";
+             }
+             else{
+             
+             var b= document.getElementById("Email").value; 
+             var c= document.getElementById("Message").value;
+
+             alert("Your Form has been successfully submitted"+
+
+                 
+             "Name:"+ "     " +a+ "    "+ "Email:"+"   "+b+"  " +"Message:" +"  "+c);
+             }
+            
+        }
+         
+
+</script>
+
+
+</head>
+<body>
+
+        <!-- navbar-->  
+       <nav class="navbar navbar-expand-lg fixed-top ">  
+            <a class="navbar-brand" href="#">Anything.com</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">     
+               <ul class="navbar-nav mr-4">
+                  <li class="nav-item">
+                       <a class="nav-link" data-value="about" href="#about">About</a>
+                  </li>  
+                  <li class="nav-item">
+                      <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
+                   </li>
+                   <li class="nav-item"> 
+                      <a class="nav-link " data-value="blog" href="#">Blog</a>         
+                    </li>   
+                   <li class="nav-item">  
+                     <a class="nav-link " data-value="team" href="#">Team</a>       
+                   </li>  
+                  <li class="nav-item"> 
+                   <a class="nav-link " data-value="contact" href="#">Contact</a>       
+                  </li> 
+                </ul> 
+            </div>
+          </nav>
+     <!-- navbar ends --> 
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm 12" id="form" name="myform">
+                <h3 class="text-left" id="a">Send Us Your Feedback</h3>
+                <p  id="s" class="text-left">We value your opinion</p>
+            <hr>
+            <div class="form-group">
+                <input type="text" class="form-control" required id="Username"  name="name"   onsubmit=" return validate()";>
+                <label class="form-control-placeholder" for="Username">Name</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control"  required id="Email" name="email"  >
+                <label class="form-control-placeholder"  for="Email">Email</label>
+            </div>
+
+            <div class="form-group">
+                <textarea type="text" class="form-control"   required  id="Message"  cols="" rows="5" name="message" ></textarea>
+                <label class="form-control-placeholder" for="Message">Your Message</label>
+            </div>
+              
+                <input type="submit" class="" id="Button" class="btn" value="Submit" onclick="showResult()">
+                <br>
+
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <h2 class="text-center">Customer Support Center</h2>
+                    <p class="text-center text-white">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                     </p>
+                
+                     <input type="submit" class="" id="btn" class="btn" value="Join Us!">
+                     <br>
+            </div>
+        </div>
+    </div>
+   
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  
+</body>
+</html>
